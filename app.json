@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "voice-to-task",
+    "slug": "voice-to-text",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#5B4BFF"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app needs microphone access to capture your voice commands and convert them into tasks."
+      }
+    },
+    "android": {
+      "permissions": [
+        "RECORD_AUDIO",
+        "POST_NOTIFICATIONS",
+        "SCHEDULE_EXACT_ALARM",
+        "RECEIVE_BOOT_COMPLETED"
+      ],
+      "package": "com.voicetotask.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#5B4BFF"
+      }
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-font",
+      [
+        "expo-notifications",
+        {
+          "color": "#5B4BFF"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8aa4170b-f808-4193-a9ae-abed15083f83"
+      }
+    },
+    "owner": "seemalaharids-team"
+  }
+}
