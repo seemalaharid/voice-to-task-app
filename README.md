@@ -29,7 +29,7 @@ keeps the whole app runnable in Expo Go with zero native build steps.
 - **React Native (Expo SDK 52)**
 - **expo-av** — audio recording
 - **expo-file-system** — reading recorded audio as base64
-- **Google Gemini API** (`gemini-2.0-flash`) — speech transcription + task
+- **Google Gemini API** (`gemini-3.1-flash-lite`) — speech transcription + task
   extraction (structured JSON output)
 - **@react-native-async-storage/async-storage** — local persistence
 - **@react-navigation/native-stack** — navigation between screens
