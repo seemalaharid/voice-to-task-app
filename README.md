@@ -8,7 +8,7 @@ produces a task with `task`, `date`, and `time` fields.
 
 1. **Record** — Tap the mic button to record your voice using `expo-av`.
 2. **Understand** — The recorded audio is sent directly to **Google Gemini**
-   (`gemini-2.0-flash`), which transcribes the speech *and* extracts the task
+   (`gemini-3.1-flash-lite`), which transcribes the speech *and* extracts the task
    details (task, date, time) in a single API call, returning structured JSON.
 3. **Confirm** — The extracted details are shown on an editable screen so the
    user can fix anything before saving.
