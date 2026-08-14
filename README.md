@@ -38,20 +38,20 @@ keeps the whole app runnable in Expo Go with zero native build steps.
 - **@react-navigation/native-stack** — navigation between screens
 
 ## Project Structure
+
+```
 voice-to-task/
 ├── App.js
 ├── app.json
 ├── eas.json
-├── babel.config.js             # Gemini API key
+├── babel.config.js         #Gemini API Key
 ├── package-lock.json
-├── package.json         
+├── package.json
 ├── .env
 ├── .gitignore
-├── Android
-├── assets
-    ├──icon.png
-├── package.json
-├── package-lock.json
+├── android/
+├── assets/
+│   └── icon.png
 ├── README.md
 └── src/
     ├── components/
@@ -70,25 +70,27 @@ voice-to-task/
     │   ├── RecordScreen.js
     │   └── TaskListScreen.js
     ├── services/
-    │   ├── aiService.js           # Gemini API call + JSON parsing
-    │   ├── audioService.js        # recording start/stop, permissions
-    │   ├── notificationService.js # local notification scheduling
-    │   └── storageService.js      # AsyncStorage CRUD for tasks
+    │   ├── aiService.js
+    │   ├── audioService.js
+    │   ├── notificationService.js
+    │   └── storageService.js
     └── theme/
         └── theme.js
-
+```
 
 ## Setup Instructions
 
 ### 1. Prerequisites
+```
 - Node.js LTS installed
 - [Expo Go](https://expo.dev/go) app installed on your phone
 - A free Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
 
 ### 2. Install dependencies
-bash
+``` bash
 cd voice-to-task
 npm install
+```
 
 ### 3. Add your Gemini API key
 Create a `.env` file in the project root (see `.env.example` if provided):
@@ -98,7 +100,7 @@ EXPO_PUBLIC_GEMINI_MODEL=gemini-3.1-flash-lite
 `src/config.js` reads these automatically — no need to edit code.
 
 ### 4. Run in development (Expo Go)
-bash
+```bash
 npx expo start
 Scan the QR code with the **Expo Go** app on your phone (same Wi-Fi network
 as your computer). This is the fastest way to try the app — no build step
