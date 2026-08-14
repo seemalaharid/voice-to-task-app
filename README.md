@@ -47,7 +47,8 @@ voice-to-task/
 ├── config.js                     # Gemini API key
 ├── .env
 ├── .gitignore
-├── icon.png
+├── assets
+    ├──icon.png
 ├── package.json
 ├── package-lock.json
 ├── README.md
