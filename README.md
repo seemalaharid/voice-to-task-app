@@ -8,7 +8,7 @@ produces a task with `task`, `date`, and `time` fields.
 
 1. **Record** — Tap the mic button to record your voice using `expo-av`.
 2. **Understand** — The recorded audio is sent directly to **Google Gemini**
-   (`gemini-2.0-flash`), which transcribes the speech *and* extracts the task
+   (`gemini-3.1-flash-lite`), which transcribes the speech *and* extracts the task
    details (task, date, time) in a single API call, returning structured JSON.
 3. **Confirm** — The extracted details are shown on an editable screen so the
    user can fix anything before saving.
@@ -26,10 +26,10 @@ keeps the whole app runnable in Expo Go with zero native build steps.
 
 ## Tech Stack
 
-- **React Native (Expo SDK 52)**
+- **React Native (Expo SDK 54)**
 - **expo-av** — audio recording
 - **expo-file-system** — reading recorded audio as base64
-- **Google Gemini API** (`gemini-2.0-flash`) — speech transcription + task
+- **Google Gemini API** (`gemini-3.1-flash-lite`) — speech transcription + task
   extraction (structured JSON output)
 - **@react-native-async-storage/async-storage** — local persistence
 - **@react-navigation/native-stack** — navigation between screens
