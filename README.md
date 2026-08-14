@@ -44,9 +44,12 @@ voice-to-task/
 ├── App.js
 ├── app.json
 ├── eas.json
-├── config.js                     # Gemini API key
+├── babel.config.js             # Gemini API key
+├── package-lock.json
+├── package.json         
 ├── .env
 ├── .gitignore
+├── Android
 ├── assets
     ├──icon.png
 ├── package.json
@@ -75,7 +78,7 @@ voice-to-task/
     │   └── storageService.js      # AsyncStorage CRUD for tasks
     └── theme/
         └── theme.js
-```
+
 
 ## Setup Instructions
 
